@@ -97,8 +97,8 @@ sudo apt-get update
 sudo apt-get install -y docker.io
 sudo systemctl start docker
 echo "Pulling and running Docker container..."
-sudo docker pull lilachamar/flask-sql-i:latest
-sudo docker run -d -p 5000:5000 lilachamar/flask-sql-i:latest
+sudo docker pull lilachamar/flask-sql-i:testing
+sudo docker run -d -p 5000:5000 lilachamar/flask-sql-i:testing
 EOF
     tags = {
         Name = "testing_ec2"
