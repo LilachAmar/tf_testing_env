@@ -1,3 +1,3 @@
-output "public_ip" {
-  value = aws_instance.testing_ec2.public_ip
+output "load_balancer_dns_name" {
+  value = aws_lb.front.dns_name
 }
