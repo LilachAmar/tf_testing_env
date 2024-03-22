@@ -77,6 +77,11 @@ resource "aws_route_table_association" "public_1_rt_a" {
   route_table_id = aws_route_table.public_rt.id
 }
 
+resource "aws_route_table_association" "public_1_rt_b" {
+  subnet_id      = aws_subnet.testing_public_subnet_1b.id
+  route_table_id = aws_route_table.public_rt.id
+}
+
 resource "aws_security_group" "web_sg" {
   name   = "HTTP and SSH"
   vpc_id = aws_vpc.testing_vpc.id
